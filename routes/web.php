@@ -13,4 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'home\IndexController@index');
+Route::get('/', 'home\IndexController@index')->name('home');
+Route::get('/help', 'home\StaticController@help')->name('help');
+Route::get('/about', 'home\StaticController@about')->name('about');
+Route::get('/login', 'home\PublicController@login')->name('login');
