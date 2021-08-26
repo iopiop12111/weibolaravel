@@ -17,3 +17,4 @@ Route::get('/', 'home\IndexController@index')->name('home');
 Route::get('/help', 'home\StaticController@help')->name('help');
 Route::get('/about', 'home\StaticController@about')->name('about');
 Route::get('/login', 'home\PublicController@login')->name('login');
+Route::get('/register', 'home\PublicController@register')->name('register');

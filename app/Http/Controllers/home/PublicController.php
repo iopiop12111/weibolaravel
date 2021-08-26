@@ -10,4 +10,7 @@ class PublicController extends Controller
     public function login(){
         echo 'login';
     }
+    public function register(){
+        return view('home.public.register');
+    }
 }
